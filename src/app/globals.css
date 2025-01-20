@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -13,17 +13,13 @@
     --foreground: #ededed;
   }
 }
+ */
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 .graditent-btn{
   background: linear-gradient(90deg, #4B39DA 2.22%, #CC2C6B 96.67%);
 }
-.card-content, .main-content{
+.main-content{
   background: linear-gradient(252.13deg, rgba(206, 225, 255, 0.3) 1.73%, rgba(232, 241, 254, 0.3) 100.28%),
 linear-gradient(110.04deg, rgba(255, 255, 255, 0.2) 0.84%, rgba(233, 239, 251, 0.2) 96.43%);
 border: none;
