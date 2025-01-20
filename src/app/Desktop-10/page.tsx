@@ -7,9 +7,10 @@ import { Form } from "react-bootstrap";
 
 export default function Home() {
   return (
-    <div className="main-content mt-5 p-4 card container shadow-lg   border border-light">
+    <div className="main-container container mt-5 bg-white p-4">
+      <div className="main-content mt-4 p-4 card container shadow-lg   border border-light">
       <div className="d-flex rounded-5 ">
-        <div className="play-btn d-flex  justify-content-center  rounded-circle  px-2 cursor-pointer"><Image
+        <div className="play-btn-color d-flex  justify-content-center  rounded-circle  px-2 cursor-pointer"><Image
           src="/icons/play-btn.svg"
           alt="upload"
           width={25}
@@ -79,7 +80,7 @@ export default function Home() {
             </button>
             <button
               type="submit"
-              className="btn bg-transparent border text-dark-1 me-2 px-lg-5 px-md-4  px-sm-4 rounded-3  col-sm-4 col-lg-5 text-white graditent-immverse-ai"
+              className="btn bg-transparent border text-dark-1 me-2 px-lg-5 px-md-4  px-sm-4 rounded-3  col-sm-4 col-lg-5 text-white graditent-btn"
             //   onClick={() => {
             //     router.push("/dashboard");
             //   }}
@@ -88,8 +89,8 @@ export default function Home() {
             </button>
           </div>
 
-          <Form
-            initialValues={{ prompt: "" }}
+          {/* <Form
+            // initialValues={{ prompt: "" }}
           // validationSchema={validationSchema}
           // onSubmit={handleSubmit}
           >
@@ -109,11 +110,11 @@ export default function Home() {
                       </div>
                     </div>
 
-                    {/* <ErrorMessage
+                    <ErrorMessage
                     name="prompt"
                     component="div"
                     className="text-danger mt-1"
-                  /> */}
+                  />
                   </div>
                 </div>
 
@@ -140,10 +141,11 @@ export default function Home() {
                   </button>
                 </div>
               </Form>
-            )}
-          </Form>
+          
+          </Form> */}
         </div>
       </div>
+    </div>
     </div>
   );
 }

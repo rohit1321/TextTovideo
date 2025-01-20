@@ -95,7 +95,7 @@ export default function Home() {
             </button>
             <button
               type="submit"
-              className="btn bg-transparent border text-dark-1 me-2 px-5 rounded-3  col-6 col-lg-5 text-white graditent-immverse-ai"
+              className="btn bg-transparent border text-dark-1 me-2 px-5 rounded-3  col-6 col-lg-5 text-white graditent-btn"
             //   onClick={() => {
             //     router.push("/dashboard");
             //   }}
