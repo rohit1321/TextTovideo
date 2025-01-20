@@ -19,7 +19,7 @@ export default function Home() {
                     /></div>
                     <h5 className=" mx-2 mt-1 text-start">Watch Tutorial</h5>
                 </div>
-                <div className="container col-md-8 d-flex justify-content-center flex-column mt-3">
+                <div className="container col-md-8 d-flex justify-content-center flex-column mt--3">
                     <div className=" justify-content-center bg-white rounded-lg p-3 ">
                         <div className=" d-flex  justify-content-between ">
                             <h5 className="my-3">Upload Image</h5>
@@ -33,7 +33,27 @@ export default function Home() {
                             /></div>
                         <p>Upload and attach Image to generate avatar</p>
                     </div>
-                    <App/>
+                    <App />
+                    <div className="d-flex mt-5 col-12   justify-content-between">
+                        <button
+                            type="button"
+                            className="btn bg-white border text-dark-1 me-2 px-lg-5 px-md-4   col-sm-4 col-lg-5  rounded-3"
+                        //   onClick={() => {
+                        //     router.push("/avatar-creation");
+                        //   }}
+                        >
+                            Cancel
+                        </button>
+                        <button
+                            type="submit"
+                            className="btn bg-transparent border text-dark-1 me-2 px-lg-5 px-md-4  px-sm-4 rounded-3  col-sm-4 col-lg-5 text-white graditent-btn"
+                        //   onClick={() => {
+                        //     router.push("/dashboard");
+                        //   }}
+                        >
+                            Confirm
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
