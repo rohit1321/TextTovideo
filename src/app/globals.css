@@ -28,3 +28,7 @@ border: none;
 .play-btn-color{
   background: rgba(115, 70, 241, 1);
 }
+
+.main-container-2{
+  width: 80%;
+}

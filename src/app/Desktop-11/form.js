@@ -147,7 +147,7 @@ function App() {
                                     className="px-5 py-3 text-center rounded-lg"
                                 />
                             </div>
-                            <div className="d-flex flex-column">
+                            <div className="d-flex flex-column h-100">
                                 <label htmlFor="AvatarText" className="d-flex justify-content-start">Voice</label>
                                 <Field
                                     type="text"

@@ -4,17 +4,17 @@ import Image from 'next/image';
 
 const Home: React.FC = () => {
   return (
-    <div className="container text-center my-5">
+    <div className="container text-center my-2">
       <h6 className="text-primary">AI DIGITAL AVATAR CREATOR</h6>
       <h1 className="mb-3">How would you like to create Avatar</h1>
       <p className="mb-5">You can try with image or video</p>
       <div className="row justify-content-center">
-        <div className="col-md-5 mb-4">
-          <div className="card shadow-sm">
+        <div className="col-md-5 mb-5">
+          <div className="card shadow-sm border-light" style={{ width: '470px', margin: '0 auto' }}>
             <Image
               src="/Desktop-9/right side (4).svg" // Replace with your image path
               alt="Use a Photo"
-              width={400}
+              width={350}
               height={200}
               className="card-img-top"
             />
@@ -27,7 +27,7 @@ const Home: React.FC = () => {
                 style={{
                   background: 'linear-gradient(90deg, #4B39DA 2.22%, #CC2C6B 96.67%)',
                   color: 'white',
-                  width: '100%', // Full width of the card body
+                  width: '100%',
                 }}
               >
                 Create
@@ -35,12 +35,12 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-5 mb-4">
-          <div className="card shadow-sm">
+        <div className="col-md-5 mb-5">
+          <div className="card shadow-sm border-light" style={{ width: '470px', margin: '0 auto',  }}>
             <Image
               src="/Desktop-9/right side (4).svg" // Replace with your image path
               alt="Use a Video"
-              width={400}
+              width={350}
               height={200}
               className="card-img-top"
             />
@@ -53,7 +53,7 @@ const Home: React.FC = () => {
                 style={{
                   background: 'linear-gradient(90deg, #4B39DA 2.22%, #CC2C6B 96.67%)',
                   color: 'white',
-                  width: '100%', // Full width of the card body
+                  width: '100%',
                 }}
               >
                 Create
