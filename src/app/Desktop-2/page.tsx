@@ -13,47 +13,40 @@ const Home: React.FC = () => {
   ];
 
   return (
-    <div className=" main-content  bg-white p-4 ">
-      <div className=" p-4 container ">
-        <div className="container text-center my-2">
-          <h6 className="text-primary">AI DIGITAL AVATAR CREATOR</h6>
-          <h1 className="mb-2">Turn text to video in minutes</h1>
-          <p className="mb-2">
-            Create studio-quality videos with AI avatars and voiceovers in 130+ languages.
-            It’s as easy as making a slide deck.
-          </p>
-          <a
-            href="#"
-            className="btn mb-3 border-light text-white"
-            style={{
-              background: '#7346F1',
-            }}
-          >
-            Create a free AI video
-          </a>
-          <div className="d-flex justify-content-center">
-          <div className="card p-3  border-light col-12 w-50">
-            <div className=" row">
-              {videos.map((video, index) => (
-                <div className=" mb-2  col-4 " key={index}>
-                  <div className="position-relative">
-                    <video
-                      src={video.src}
-                      width={300}
-                      height={80}
-                      controls
-                      className="rounded"
-                    >Your browser does not support the video tag.
-                    </video>
-                  </div>
-                </div>
-              ))}
+    <div className="main-content container  bg-white  ">
+      <div className=" text-center ">
+        <h6 className="text-primary ">AI DIGITAL AVATAR CREATOR</h6>
+        <h1 className="mb-2">Turn text to video in minutes</h1>
+        <p className="mb-2">
+          Create studio-quality videos with AI avatars and voiceovers in 130+ languages.
+          It’s as easy as making a slide deck.
+        </p>
+        <a
+          href="#"
+          className="btn mb-1 text-white border-light play-btn-color"
+          style={{
+            background: '#7346F1',
+          }}>Create a free AI video
+        </a>
+      </div>
+      <div className=" p-4 container-fluid ">
+        <div className=" row">
+          {videos.map((video, index) => (
+            <div className="col-md-4 col-lg-4 col-6 mb-2" key={index}>
+              <div className="position-relative d-flex  justify-content-center">
+                <video
+                  src={video.src}
+                  width={230}
+                  height={150}
+                  controls
+                  className="rounded"
+                >Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
-          </div>
-          </div>
+          ))}
         </div>
       </div>
-
     </div>
   );
 };

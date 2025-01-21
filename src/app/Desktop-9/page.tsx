@@ -4,18 +4,18 @@ import Image from 'next/image';
 
 const Home: React.FC = () => {
   return (
-    <div className="container text-center my-2">
+    <div className="container text-center my-3">
       <h6 className="text-primary">AI DIGITAL AVATAR CREATOR</h6>
-      <h1 className="mb-3">How would you like to create Avatar</h1>
-      <p className="mb-5">You can try with image or video</p>
+      <h3 className="mb-2">How would you like to create Avatar</h3>
+      <p className="mb-2">You can try with image or video</p>
       <div className="row justify-content-center">
-        <div className="col-md-5 mb-5">
-          <div className="card shadow-sm border-light" style={{ width: '470px', margin: '0 auto' }}>
+        <div className="col-5 mb-3">
+          <div className="card shadow-sm border-light">
             <Image
               src="/Desktop-9/right side (4).svg" // Replace with your image path
               alt="Use a Photo"
-              width={350}
-              height={200}
+              width={50}
+              height={50}
               className="card-img-top"
             />
             <div className="card-body">
@@ -35,13 +35,13 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-5 mb-5">
-          <div className="card shadow-sm border-light" style={{ width: '470px', margin: '0 auto',  }}>
+        <div className="col-5 mb-3">
+          <div className="card shadow-sm border-light">
             <Image
               src="/Desktop-9/right side (4).svg" // Replace with your image path
               alt="Use a Video"
-              width={350}
-              height={200}
+              width={50}
+              height={50}
               className="card-img-top"
             />
             <div className="card-body">

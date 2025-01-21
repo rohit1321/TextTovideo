@@ -54,9 +54,6 @@ const MaleVoiceOption = [
             </div>
         ),
     },
-];
-
-const FemaleVoiceOption = [
     {
         value: "Brat",
         label: (
@@ -106,6 +103,8 @@ const FemaleVoiceOption = [
         ),
     },
 ];
+
+
 
 function App() {
     const [selectedMaleVoice, setSelectedMaleVoice] = useState(null);
@@ -158,17 +157,17 @@ function App() {
                                 />
                                 {/* male  audio */}
 
-                                <div className="d-flex col-12  mt-2  justify-content-between w-100">
+                                <div className="d-flex col-12  mt-2  justify-content-center w-100 ">
                                     <div className="col-5 ">
                                         <Select
                                             value={selectedMaleVoice}
                                             onChange={handleMaleVoiceChange}
                                             options={MaleVoiceOption}
-                                            placeholder="Male Voice"
+                                            placeholder="Voice"
                                             isDisabled={!!selectedFemaleVoice} // Disable female voice 
                                         />
                                     </div>
-                                    <div className="col-5">
+                                    {/* <div className="col-5">
                                         <Select
                                             value={selectedFemaleVoice}
                                             onChange={handleFemaleVoiceChange}
@@ -177,7 +176,7 @@ function App() {
                                             isDisabled={!!selectedMaleVoice} // Disable male voice
                                         />
 
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </Form>
