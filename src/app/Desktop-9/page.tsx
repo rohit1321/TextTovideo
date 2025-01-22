@@ -9,7 +9,7 @@ const Home: React.FC = () => {
       <h3 className="mb-2">How would you like to create Avatar</h3>
       <p className="mb-2">You can try with image or video</p>
       <div className="row justify-content-center">
-        <div className="col-5 mb-3">
+        <div className="col-8 col-lg-5 col-md-5 mb-3">
           <div className="card shadow-sm border-light">
             <Image
               src="/Desktop-9/right side (4).svg" // Replace with your image path
@@ -35,7 +35,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="col-5 mb-3">
+        <div className="col-8 col-lg-5 col-md-5 mb-3">
           <div className="card shadow-sm border-light">
             <Image
               src="/Desktop-9/right side (4).svg" // Replace with your image path
